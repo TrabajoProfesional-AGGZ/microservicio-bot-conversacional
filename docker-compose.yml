@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  microservicio-bot-conversacional:
+    build: .
+    container_name: sociounido-ms-bot
+    ports:
+      - "8003:8000"
+    volumes:
+      - ./app:/app/app
+    environment:
+      - VERIFY_TOKEN=sociounido_token_secreto_123
+      - ENV=development
+  
