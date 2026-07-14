@@ -8,7 +8,5 @@ services:
       - "8003:8000"
     volumes:
       - ./app:/app/app
-    environment:
-      - VERIFY_TOKEN=sociounido_token_secreto_123
-      - ENV=development
-  
+    env_file:
+      - .env
