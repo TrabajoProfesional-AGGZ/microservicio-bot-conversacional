@@ -17,3 +17,17 @@ Para más detalles, revisar el archivo `LICENSE` incluido en este repositorio.
 ## Página documental
 
 Desarrollada con [Just the Docs](https://just-the-docs.com/).
+
+### Comandos
+
+```bash
+
+docker-compose up --build -d
+
+```
+
+```bash
+
+ngrok http 8003
+
+```
